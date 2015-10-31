@@ -109,7 +109,7 @@ mongoClient.connect( mongoUrl, function ( error, database ) {
   app.use( express.static(path.join(__dirname, '/public/css')) );
 
   // Get port from environment and store in Express.
-  app.set('port', process.env.PORT || '3000');
+  app.set('port', process.env.PORT || config.port);
 
   // configure passport strategies
   passport.serializeUser(function (user, done) { // serialize user
