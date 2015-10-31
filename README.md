@@ -27,7 +27,7 @@ Several enhancements are implemented in this first publish version, as following
 
 4. signup one user and enjoy yourself.
 
-After you sign up and invite few friends, you most likely get a following similar view
+After you sign up and invite few friends, you most likely get a similar view as following, the circular flag in the top-left corner of each avatar indicates each person's status, the orange one is the current user, the grey one indicates the friend is offline, green one indicates the friend is online, and the red semi-circular means the friend is the current chatee. 
 
 # ![vanTalk ScreenShot](http://115.29.206.70/assets/vantalk_chat_s.png)
 
