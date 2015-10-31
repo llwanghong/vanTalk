@@ -1,4 +1,7 @@
-# vanTalk
+# [![vanTalk Logo](http://115.29.206.70/assets/vanTalk_logo_s.png)](http://115.29.206.70:3000/)
+
+#vanTalk
+
 One Realtime Chatting WebApp
 
 ##What is vanTalk?
@@ -24,6 +27,9 @@ Several enhancements are implemented in this first publish version, as following
 
 4. signup one user and enjoy yourself.
 
+After you sign up and invite few friends, you most likely get a following similar view
+
+# ![vanTalk ScreenShot](http://115.29.206.70/assets/vantalk_chat_s.png)
 
 ##Configuration
 
