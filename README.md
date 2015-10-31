@@ -6,8 +6,8 @@ One Realtime Chatting WebApp
 
 ##What is vanTalk?
 vanTalk is one realtime online chatting webapp. The original idea is coming out after reading the book
-"Single Page Web Applications: JavaScript end-to-end". Based on the prototype presented in the book.
-Several enhancements are implemented in this first publish version, as following:
+"Single Page Web Applications: JavaScript end-to-end". Based on the prototype presented in the book,
+several enhancements are implemented in this first publish version, as following:
 
 * user signin and signup
 * user password reset or update
