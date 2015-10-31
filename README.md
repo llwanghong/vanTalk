@@ -29,7 +29,7 @@ Several enhancements are implemented in this first publish version, as following
 
 The configuration file is config.js under ./lib directory, mainly including following options:
 
-*  port : this is the server listening port, default is '3000'.
+*  port : the server listening port, default is '3000'.
 *  database : MongoDB database path and name, default is 'mongodb://localhost:27017/spa'.
 *  cookieMaxage : cookie max-age, default is 3600000, one hour.
 *  sessionSecret : session secret string, default is 'vanTalk@v0.0.1'.
