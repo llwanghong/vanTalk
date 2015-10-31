@@ -9,10 +9,13 @@ vanTalk is one realtime online chatting webapp. The original idea is coming out 
 "Single Page Web Applications: JavaScript end-to-end". Based on the prototype presented in the book,
 several enhancements are implemented in this first publish version, as following:
 
+* chat window can be drag resize
 * user signin and signup
 * user password reset or update
 * friend search and invitation
 * friendly online status notification
+
+The current goal is to impelment all functions provided by gtalk.
 
 ##Installation and Run
 1. using [npm](http://npmjs.org) to install all dependent modules in package.json
