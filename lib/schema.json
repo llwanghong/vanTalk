@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "minLength": 25,
+      "maxLength": 25
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "pattern": "^[^@]+@[^.]+\\..+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 127
+    },
+    "resetPasswordToken": {
+      "type": "string"
+    },
+    "resetPasswordExpires": {
+      "type": "number"
+    },
+    "is_online": {
+      "type": "boolean"
+    },
+    "css_map": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "background-color": {
+          "required": true,
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 25
+        },
+        "top": {
+          "type": "integer"
+        },
+        "left": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

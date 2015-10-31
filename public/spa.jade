@@ -1,0 +1,48 @@
+doctype html
+//
+ spa.html
+ spa browser document
+html
+  head
+    // e9+ rendering support for latest standards 
+    meta(http-equiv="Content-Type", content="text/html; charset=utf-8")/
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")/
+    title Chat Slider SPA
+    // third-party stylesheets 
+    // our stylesheets 
+    link(rel="stylesheet", href="/spa.css", type="text/css")/
+    link(rel="stylesheet", href="/spa.shell.css", type="text/css")/
+    link(rel="stylesheet", href="/spa.chat.css", type="text/css")/
+    link(rel="stylesheet", href="/spa.avtr.css", type="text/css")/
+    // third-party javascript 
+    script(type="text/javascript", src="/socket.io/socket.io.js")
+    script(type="text/javascript", src="/jquery-1.9.1.min.js")
+    script(type="text/javascript", src="/jquery.uriAnchor.js")
+    script(type="text/javascript", src="/jquery.event.gevent.js")
+    script(type="text/javascript", src="/jquery.event.ue.js")
+    // our javascript 
+    script(src="/spa.js")
+    script(src="/spa.util.js")
+    script(src="/spa.data.js")
+    script(src="/spa.model.js")
+    script(src="/spa.util_b.js")
+    script(src="/spa.shell.js")
+    script(src="/spa.chat.js")
+    script(src="/spa.avtr.js")
+    - var data = JSON.stringify(user || reset);
+    - var prefix = "$(function () { spa.initModule($('#spa')";
+    - var suffix = "); });";
+    - var infix = data ? ", " + data : "";
+    - var script = prefix + infix + suffix;
+    script(type="text/javascript").
+      /*jslint browser : true, continue : true,
+      devel : true, indent : 2, maxerr : 50,
+      newcap : true, nomen : true, plusplus : true,
+      regexp : true, sloppy : true, vars : true,
+      white : true
+      */
+      /*global jQuery */
+
+      !{script}
+  body
+    #spa

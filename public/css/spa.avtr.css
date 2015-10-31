@@ -1,0 +1,70 @@
+/*
+ * spa.avtr.css
+ * Avatar feature styles
+ */
+
+.spa-avtr-box {
+  position      : absolute;
+  width         : 4.2em;
+  height        : 4.2em;
+  padding       : 0 0.2em;
+  line-height   : 4.2em;
+  /*border        : 0.2em solid #aaa;*/
+  cursor        : pointer;
+  text-align    : left;
+  overflow      : hidden;
+  text-overflow : ellipsis;
+  border-radius : 0.2em;
+  text-align    : center;
+  overflow      : visible;
+  background    : url(image/avatars/default.svg);
+}
+
+span.spa-avtr-box-flag {
+  display       : block;
+  width         : 1em;
+  height        : 1em;
+  top           : -0.2em;
+  right         : -0.2em;
+  z-index       : 1000;
+  position      : absolute;
+  border-radius : 0.5em;
+  background-color : #AAA;
+  /* outline: 1px solid navy; */
+}
+
+span.spa-avtr-box-name {
+  position    : absolute;
+  width       : 4.2em;
+  height      : 2em;
+  line-height : 2em;
+  text-align  : center;
+  top         : -2em;
+  left        : 0;
+  /* outline: 1px dotted navy; */
+}
+
+.spa-x-is-user .spa-avtr-box-flag {
+  background-color : #F82;
+}
+
+.spa-avtr-box.spa-x-is-user {
+  top  : 0.5em;
+  left : 0.5em;
+}
+
+.spa-x-is-chatee .spa-avtr-box-flag {
+  /*background-color : #A00;*/
+  border-top : 0.5em solid #A00;
+}
+
+.spa-x-is-online .spa-avtr-box-flag {
+  background-color : #0A0;
+}
+
+.spa-avtr-box.spa-x-is-drag {
+  cursor           : move;
+  /*color            : #fff;*/
+  background-color : rgba(0, 0, 0, 0.1);
+  /*border-color     : #800;*/
+}

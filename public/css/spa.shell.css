@@ -1,0 +1,524 @@
+/*
+ * spa.shell.css
+ * Shell styles
+ */
+
+.spa-shell-head, .spa-shell-head-logo, .spa-shell-head-acct,
+.spa-shell-head-signin, .spa-shell-head-signup,
+.spa-shell-head-search, .spa-shell-main, .spa-shell-main-nav,
+.spa-shell-main-content, .spa-shell-foot, /* .spa-shell-chat, */
+.spa-shell-modal {
+  position : absolute;
+}
+
+.spa-shell-head {
+  top    : 0;
+  left   : 0;
+  right  : 0;
+  height : 3.3em;
+}
+
+.spa-shell-head-logo {
+  top    : 0.35em;
+  left   : 0.3em;
+  height : 2.7em;
+  width  : 8.8em;
+}
+
+.spa-shell-head-logo h1 {
+  font    : 800 1.8em/1.5em Arial, Helvetica, sans-serif; 
+  margin  : 0;
+  padding : 0;
+}
+
+.spa-shell-head-logo .spa-shell-head-prelogo {
+  color         : #ddd;
+  padding       : 0.1em 0.1em 0.1em 0.3em; 
+  margin        : 0;
+  border-radius : 0.15em 0 0 0.15em;
+  background    : rgba(36, 148, 136, 1);
+}
+
+.spa-shell-head-logo .spa-shell-head-postlogo {
+  padding       : 0.1em 0.3em 0.1em 0.1em; 
+  margin        : 0;
+  border-radius : 0 0.15em 0.15em 0;
+  background    : orange;
+}
+
+.spa-shell-head-acct {
+  top           : 0.35em;
+  right         : 0;
+  width         : 16.9em;
+  height        : 2.7em;
+  line-height   : 2.7em;
+  color         : #fff;
+  text-align    : center;
+  cursor        : pointer;
+  overflow      : hidden;
+  text-overflow : ellipsis;
+}
+
+.spa-shell-head-signin {
+  top           : 0;
+  left          : 0;
+  width         : 8.2em;
+  height        : 2.7em;
+  line-height   : 2.7em;
+  background    : #888;
+  color         : #fff;
+  text-align    : center;
+  cursor        : pointer;
+  overflow      : hidden;
+  text-overflow : ellipsis;
+  border-radius : 0.2em;
+}
+
+.spa-shell-head-signup {
+  top           : 0;
+  right         : 0.1em;
+  width         : 8.2em;
+  height        : 2.7em;
+  line-height   : 2.7em;
+  background    : #888;
+  color         : #fff;
+  text-align    : center;
+  cursor        : pointer;
+  overflow      : hidden;
+  text-overflow : ellipsis;
+  border-radius : 0.2em;
+}
+
+.spa-shell-head-acct a {
+  text-decoration: none;
+}
+
+.spa-shell-main {
+  top    : 40px;
+  left   : 0;
+  bottom : 40px;
+  right  : 0;
+}
+
+.spa-shell-main-content,
+.spa-shell-main-nav {
+  top    : 0;
+  bottom : 0;
+}
+
+.spa-shell-main-nav {
+  width      : 400px;
+  background : #eee;
+  z-index    : 1;
+}
+
+.spa-x-closed .spa-shell-main-nav {
+  width : 0;
+}
+
+.spa-shell-main-content {
+  left       : 400px;
+  right      : 0;
+  background : #eee;
+}
+
+.spa-x-closed .spa-shell-main-content {
+  left : 0;
+}
+
+.spa-shell-foot {
+  bottom : 0;
+  left   : 0;
+  right  : 0;
+  height : 40px;
+}
+
+.spa-shell-modal {
+  margin-top    : -200px;
+  margin-left   : -200px;
+  top           : 50%;
+  left          : 50%;
+  width         : 400px;
+  height        : 400px;
+  background    : #fff;
+  border-radius : 3px;
+  z-index       : 2;
+  display       : none; 
+}
+
+#spa-shell-overlay {
+  position   : fixed;
+  top        : 0px;
+  left       : 0px;
+  height     : 100%;
+  width      : 100%;
+  background : #000;
+  z-index    : 1000;
+  display    : none;
+}
+
+#spa-shell-signin,  #spa-shell-signup,
+#spa-shell-forgot,  #spa-shell-search,
+#spa-shell-setting, #spa-shell-update {
+  width                 : 31.2em;
+  padding-bottom        : 0.2em;
+  background            : #FFF;
+  border-radius         : 0.45em;
+  -moz-border-radius    : 0.45em;
+  -webkit-border-radius : 0.45em;
+  box-shadow            : 0 0 0.4em rgba(0, 0, 0, 0.7);
+  -moz-box-shadow       : 0 0 0.4em rgba(0, 0, 0, 0.7);         
+  -webkit-box-shadow    : 0 0 0.4em rgba(0, 0, 0, 0.7);
+  display               : none;
+}
+
+#spa-shell-forgot {
+  width : 30em;
+}
+
+#spa-shell-reset {
+  position      : absolute;
+  top           : 18%;
+  left          : 50%;
+  width         : 31.2em;
+  /*height        : 18.5em;*/
+  border        : 1px solid #ddd;
+  z-index       : 1;
+  margin-left   : -15.6em;
+  border-radius : 0.45em;
+  display       : none;
+}
+
+.spa-shell-reset-header {
+  background                      : #E2E2E2;
+  padding                         : 0.8em 0.6em;
+  border-bottom                   : 0.1em solid #CCC;
+  border-top-left-radius          : 0.45em;
+  -moz-border-radius-topleft      : 0.45em;
+  -webkit-border-top-left-radius  : 0.45em;
+  border-top-right-radius         : 0.45em;
+  -moz-border-radius-topright     : 0.45em;
+  -webkit-border-top-right-radius : 0.45em;
+}
+
+.spa-shell-reset-header h2 {
+  color       : #444;
+  font-size   : 1.5em;
+  font-weight : 700;
+  margin      : 0.2em 0.5em;
+  text-shadow : 0.1em 0.1em 0 rgba(255, 255, 255, 0.5);
+}
+
+#spa-shell-reset .spa-shell-form-group label {
+  float      : left;
+  width      : 5em;
+  padding    : 0em 0.3em;
+  color      : #222;
+  font-size  : 1.3em;
+  text-align : left;
+}
+
+#spa-shell-reset .spa-shell-form-submit button {
+  font-size   : 1.2em;
+  color       : #FFF;
+  padding     : 0.6em 1em;
+  font-weight : bold;
+  margin-top  : 0.2em;
+  text-shadow : 0 0.1em 0 rgba(0, 0, 0, 0.4);
+  background  : rgba(36, 148, 136, 1);
+  border-radius         : 0.2em;
+  -webkit-border-radius : 0.2em;
+}
+
+#spa-shell-reset .spa-shell-form-group {
+  position      : relative;
+  width         : 31em;
+  padding       : 1em;
+  text-align    : right;
+  border-bottom : 0.1em solid #ddd;
+}
+
+button.reset-submit {
+  position : absolute;
+  right    : 7em;
+}
+
+button.reset-cancel {
+  position : relative;
+  right    : -8.7em;
+}
+
+#spa-shell-signin a {
+  text-decoration : none;
+}
+
+#spa-shell-sign-header {
+  background                      : #E2E2E2;
+  padding                         : 0.8em 0.6em;
+  border-bottom                   : 0.1em solid #CCC;
+  border-top-left-radius          : 0.45em;
+  -moz-border-radius-topleft      : 0.45em;
+  -webkit-border-top-left-radius  : 0.45em;
+  border-top-right-radius         : 0.45em;
+  -moz-border-radius-topright     : 0.45em;
+  -webkit-border-top-right-radius : 0.45em;
+}
+
+#spa-shell-sign-header h2 {
+  color       : #444;
+  font-size   : 1.5em;
+  font-weight : 700;
+  margin      : 0.2em 0.5em;
+  text-shadow : 0.1em 0.1em 0 rgba(255, 255, 255, 0.5);
+}
+
+.spa-shell-modal-close {
+  position    : absolute;
+  right       : 1.2em;
+  top         : 1.2em;
+  width       : 1.5em;
+  height      : 1.5em;
+  text-align  : center;
+  line-height : 1.5em;
+  font-size   : 1em;
+  font-weight : 900;
+  font-family : arial, helvetica, sans-serif;
+  cursor      : pointer;
+}
+
+.spa-shell-modal-close:hover {
+  background : #800;
+  color      : #FFF;
+}
+
+.spa-shell-flash-info {
+  position   : relative;
+  text-align : center;
+  width      : 100%;
+  padding    : 1em 0;
+  color      : #222;
+  font-size  : 1.3em;
+  display    : none; 
+}
+
+.flash-error {
+  color            : #a94442;
+  border-color     : #ebccd1;
+  background-color : #f2dede;
+}
+
+.flash-warning {
+  color            : #8a6d3b;
+  border-color     : #faebcc;
+  background-color : #fcf8e3;
+}
+
+.flash-info {
+  color            : #31708f;
+  border-color     : #bce8f1;
+  background-color : #d9edf7;
+}
+
+.flash-success {
+  font-weight      : 600;
+  color            : #3c763d;
+  border-color     : #d6e9c6;
+  background-color : #dff0d8; 
+}
+
+.spa-shell-form-group {
+  position      : relative;
+  width         : 31em;
+  padding       : 1em;
+  border-bottom : 0.1em solid #EEE;
+  text-align    : right;
+}
+
+.spa-shell-form-group label {
+  float      : left;
+  width      : 5em;
+  padding    : 0.5em 0.3em;
+  color      : #222;
+  font-size  : 1.3em;
+  text-align : left;
+}
+
+#spa-shell-forgot .spa-shell-form-group {
+  width : 30em;
+  padding : 1em 1.2em 1em 1em;
+}
+
+label.spa-shell-form-confirm-password {
+  padding : 0 0.3em;
+}
+
+.spa-shell-form-group input {
+  width                 : 17.5em;
+  padding               : 0.6em;
+  border-radius         : 0.3em;
+  -moz-border-radius    : 0.3em;
+  -webkit-border-radius : 0.3em;
+  font-size             : 1.2em;
+  color                 : #222;
+  background            : #F7F7F7;
+  border-top    : 0.1em solid #CCC;
+  border-left   : 0.1em solid #CCC;
+  border-right  : 0.1em solid #E7E6E6;
+  border-bottom : 0.1em solid #E7E6E6;
+}
+
+.spa-shell-form-submit {
+  padding: 0.6em 0em 0.6em 12em;
+}
+
+#spa-shell-signup .spa-shell-form-submit,
+#spa-shell-search .spa-shell-form-submit {
+  padding: 0.6em 0em 0.6em 22.1em;
+}
+
+#spa-shell-forgot .spa-shell-form-submit {
+  padding: 0.6em 0em 0.6em 15.8em;
+}
+
+.spa-shell-form-submit button {
+  /*background          : #3F9D4A; */
+  background            : rgba(36, 148, 136, 1); 
+  border                : none;
+  font-size             : 1.2em;
+  color                 : #FFF;
+  padding               : 0.6em 1em;
+  margin-left           : 1em;
+  border-radius         : 0.2em;
+  -webkit-border-radius : 0.2em;
+  font-weight           : bold;
+  text-shadow           : 0 0.1em 0 rgba(0,0,0,0.4);
+}
+
+@-moz-document url-prefix() {
+  .spa-shell-form-submit button {  
+    margin-left   : 0.8em;
+    border-radius : 0.2em;
+  }
+}
+
+.spa-shell-form-submit a {
+  font-size : 1.2em;
+  padding   : 0 1em;
+}
+
+@-moz-document url-prefix() {
+  .spa-shell-form-submit a {  
+    padding : 0 0 0 1em;
+  }
+}
+
+.spa-shell-search-icon {
+  position   : absolute;
+  top        : 1.2em;
+  right      : 1em;
+  width      : 2.8em;
+  height     : 2.8em;
+  background : url(/image/search_icon.svg) no-repeat center center;
+}
+
+.spa-shell-search-icon:hover {
+  background : url(/image/search_icon_hover.svg) no-repeat center center;
+}
+
+.spa-shell-search-list {
+  position   : relative;
+  text-align : center;
+  width      : 100%;
+  padding    : 0;
+  color      : #222;
+  font-size  : 1.3em;
+  display    : none; 
+}
+
+button.form-search {
+  position : absolute;
+  right    : 8em;
+}
+
+button.form-submit {
+  position : relative;
+  right    : 0.4em;
+}
+
+.person_info {
+  position  : relative;
+  /*outline : 1px dotted red;*/
+  width     : 100%;
+  margin    : 0;
+  padding   : 0.6em 0 0.6em 1em;
+  /* overflow: hidden; */
+}
+
+.person_avatar {
+  width      : 3.2em;
+  height     : 3.2em;
+  position   : relative;
+  font-size  : 12px;
+  /*background : #CEECEC;*/
+  background : url(/image/avatars/default_small.svg) #F3F3F3;
+  border-radius : 0.3em;
+  /* outline: 1px dotted navy; */
+  /* margin-left: 0.4em; */
+}
+
+.person_name {
+  position    : absolute;
+  top         : 0.6em;
+  height      : 2.5em;
+  width       : 14.3em;
+  margin-left : 4em;
+  line-height : 2.5em;
+  /* outline: 1px dotted green; */
+  /* float: left; */
+}
+
+.friend_apply {
+  position    : absolute;
+  width       : 2.5em;
+  height      : 2.5em;
+  /*outline     : 1px dotted navy;*/
+  right       : 0.6em;
+  top         : 0.6em;
+  line-height : 2.5em;
+  text-indent : -1000em; 
+  background  : url(/image/add.svg) no-repeat center center;
+}
+
+#spa-shell-update .spa-shell-form-group label {
+  float      : left;
+  width      : 5em;
+  padding    : 0em 0.3em;
+  color      : #222;
+  font-size  : 1.3em;
+  text-align : left;
+}
+
+#spa-shell-update .spa-shell-form-submit {
+  padding : 0.6em 0em 0.6em 16.2em;
+}
+
+#spa-shell-update .spa-shell-form-submit button {
+  font-size   : 1.2em;
+  color       : #FFF;
+  right       : 7em;
+  padding     : 0.6em 1em;
+  font-weight : bold;
+  margin-top  : 0.2em;
+  text-shadow : 0 0.1em 0 rgba(0, 0, 0, 0.4);
+  background  : rgba(36, 148, 136, 1);
+  border-radius         : 0.2em;
+  -webkit-border-radius : 0.2em;
+}
+
+#spa-shell-update .spa-shell-form-group {
+  position      : relative;
+  width         : 31em;
+  padding       : 1em;
+  text-align    : right;
+  border-bottom : 0.1em solid #ddd;
+}
