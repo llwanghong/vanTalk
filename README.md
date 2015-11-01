@@ -1,4 +1,4 @@
-# [![vanTalk Logo](http://115.29.206.70/assets/vanTalk_logo_s.png)](http://115.29.206.70:3000/)
+# ![vanTalk Logo](http://115.29.206.70/assets/vantalk_logo_s.png)
 
 #vanTalk
 
